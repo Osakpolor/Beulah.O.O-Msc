@@ -1,0 +1,100 @@
+/* Element selector : every <p> on the page */
+
+/* p {
+    text-transform: uppercase;
+} */
+
+/* Class selector : only elements with class="highlight" */
+
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector : one specific element */
+
+#paragraph-header {
+    border: 1px solid black;
+}
+
+/* Descendant selector : <a> elements only inside <nav> */
+
+nav a {
+    text-decoration: none;
+}
+
+/* Grouping selector : apply the same rule to multiple elements */
+
+h1 , h2 , h3 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Outside in : margin -> border -> padding -> content */
+
+
+p {
+    color: blue !important;
+}
+
+
+.warning{
+    color: red;
+}
+
+#message{
+    color: orange;
+}
+
+/* 
+
+Rank from low to high : 
+
+1 - Element selectors (p , div)
+2 - Class selectors (.warning)
+3 - ID selectors (#message)
+4 - Inline styles (always wins over any stylesheet rule)
+5 - !important (wins over everything)
+
+
+*/
+
+
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: darkgreen;
+    padding: 16px;
+}
+
+
+.card-row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* width: 300px; */
+    height: 300px;
+    /* padding: 20px; */
+    /* margin: 18px; */
+    /* margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 16px;
+    margin-left: 16px; */
+    /* margin : top right bottom left */
+    /* margin: 18px 16px 18px 16px;  */
+    /* margin : top/bottom  right/left */
+
+    /* padding : top/bottom right/left */
+    padding: 20px 24px;
+    /* border : size/width; type; color */
+    border: 2px solid green; 
+    /* margin-right: 10px; */
+    flex: 1 1 150px; 
+}
